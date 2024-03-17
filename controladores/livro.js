@@ -27,6 +27,7 @@ function getLivros (req, res) {
   function postLivro(req, res) {
     try{
           const livroNovo = req.body
+          console.log(livroNovo);
           insereLivro(livroNovo);
           res.status(201);
           res.send("Livro inserido com sucesso");     
